@@ -1,0 +1,224 @@
+/* Reset styles for all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Define color variables in :root for easy customization */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+/* Body styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--Very-light-grayish-blue);
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+/* Notification wrapper styles */
+.notification-warapper {
+    width: 730px;
+    height: 840px;
+    background-color: var(--White);
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 24px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+/* Notification header styles */
+.notification-header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Notification text styles */
+.notify-text {
+    font-size: clamp(20px, 5vw, 25px);
+    color: var(--Very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.notify-text span {
+    font-weight: 700;
+    background-color: #072e72;
+    color: var(--White);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 12px;
+}
+
+/* Mark read styles */
+.markread {
+    font-size: clamp(14px, 3vw, 16px);
+    color: var(--Dark-grayish-blue);
+    transition: all 300ms ease-in-out;
+}
+
+/* Notification styles */
+.notification {
+    display: flex;
+    padding: 15px 20px;
+    background-color: var(--Very-light-grayish-blue);
+    border-radius: 10px;
+    justify-content: flex-start;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+/* Image styles */
+img {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 45px;
+}
+
+/* Notification profile styles */
+.commennotification-profile {
+    margin-right: 20px;
+}
+
+/* Notification message styles */
+.notification-msg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+/* Attention indicator styles */
+.attention {
+    background-color: red;
+    border-radius: 108px;
+    height: 8px;
+    width: 8px;
+}
+
+/* Notification info styles */
+.notification-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+/* Notification time styles */
+.notification-time {
+    color: var(--Grayish-blue);
+}
+
+/* Styling for <b> and <strong> elements */
+b {
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+strong {
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+/* Hover styles for notification, opened message, <b>, and <strong> */
+/* .notification:hover {
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.06);
+} */
+.opened {
+    background-color: transparent;
+}
+
+.opened-msg:hover {
+    background-color: var(--Light-grayish-blue-2);
+}
+
+b:hover,
+strong:hover,
+.markread:hover {
+    color: #072e72;
+}
+
+/* Styles for opened notification */
+.notification.opened .notification-info .notification-msg {
+    text-overflow: ellipsis;
+}
+
+.opened:hover {
+    box-shadow: 0 0;
+}
+
+.opened-msg {
+    background-color: var(--White);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: 1px solid var(--Light-grayish-blue-2);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.opened-msg > p {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: var(--Dark-grayish-blue);
+}
+
+@media (max-width:749px) {
+    .notification-warapper {
+        width: auto;
+        height: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.notification-profile {
+    margin-right: 20px;
+}
+
+.commentetd-picture {
+    margin-left: auto;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>Anlperr | Notifications page</title>         
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" type="image/x-icon"/>
+        <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png" type="image/x-icon"/> 
+                 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,800&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script defer src="script.js"></script>
+    </head>     
+    <body>
+        <main class="container">
+            <div class="notification-warapper">
+                <div class="notification-header">
+                    <h1 class="notify-text">Notifications<span id="notification-count">3</span></h1>
+                    <a href="#" class="markread" id="mark-all-read">Mark all as read</a>
+                </div>
+                <div class="notification" id="notification">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-mark-webber.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Mark Webber</b> reacted to your recent post <strong>My first tournament today!&nbsp;&nbsp;</strong><span class="attention" id="attention-1"></span></p><span class="notification-time">1m ago</span>
+                    </div>
+                </div>
+                <div class="notification" id="notification">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-angela-gray.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Angela Gray</b>followed you<span class="attention" id="attention-1"></span></p><span class="notification-time">5m ago</span>
+                    </div>
+                </div>
+                <div class="notification" id="notification">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-jacob-thompson.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Jacob Thompson</b>has joined your group<strong>Chess Club&nbsp;&nbsp;</strong><span class="attention" id="attention-1"></span></p><span class="notification-time">1 day ago</span>
+                    </div>
+                </div>
+                <div class="notification opened">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-rizky-hasanuddin.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Rizky Hasanuddin</b>sent you a private message</p><span class="notification-time">5 days ago</span>
+                        <div class="opened-msg">
+                            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification opened">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-kimberly-smith.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Kimberly Smith</b>commented on your picture</p>
+                        <span class="notification-time">1 week ago</span>
+                    </div>
+                    <picture class="commentetd-picture">
+                        <img src="images/image-chess.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                </div>
+                <div class="notification opened">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-nathan-peterson.webp" alt="avatar-mark-webber">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Nathan Peterson</b>reacted to your recent post <strong>5 end-game strategies to increase your win rate</strong></p><span class="notification-time">2 weeks ago</span>
+                    </div>
+                </div>
+                <div class="notification opened">
+                    <picture class="notification-profile">
+                        <img src="images/avatar-anna-kim.webp" alt="avatar-mark-webber" width="45">
+                    </picture>
+                    <div class="notification-info">
+                        <p class="notification-msg"><b>Anna Kim</b>left the group <strong>Chess Club</strong></p><span class="notification-time">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </main>         
+    </body>     
+</html>

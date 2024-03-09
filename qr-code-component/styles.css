@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+/*font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+}
+
+ #qr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 16rem;
+    height: 27rem;
+}
+
+#qrcode {
+    height: inherit;
+    width: 17rem;
+    margin-top: -0.5rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: hsl(218, 44%, 22%);
+}
+p {
+    font-size: 0.95rem;
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+    
+}
