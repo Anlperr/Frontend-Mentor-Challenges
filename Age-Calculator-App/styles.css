@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 94%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-content{
+    width: 700px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom-right-radius: 170px;
+    padding: 40px;
+}
+.box-inputs{
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+    justify-content: space-between;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+.single-input{
+    display: flex;
+    flex-direction: column;
+}
+.single-input label{
+    letter-spacing: 0.2rem;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.single-input input{
+    width: 140px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: hsl(0, 0%, 8%);
+}
+.single-input input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+    outline: none;
+}
+.error{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+    text-transform: none;
+    margin-top: 10px;
+}
+.button-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+button{
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+.result-view{
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: -20px;
+    color: hsl(0, 0%, 8%);
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
+@media (max-width: 600px){
+    .main-content{
+        width: 350px;
+        height: 430px;
+        padding: 30px;
+        border-bottom-right-radius: 100px;
+    }
+    .box-inputs{
+        width: 100%;
+    }
+    .single-input input{
+        width: 90px;
+        font-size: 20px;
+        padding: 15px;
+    }
+    .error{
+        width: 90px;
+    }
+    .button-content{
+        margin-top: 20px;
+    }
+    button img{
+        width: 25px;
+    }
+    .line-sec{
+        border: 1px solid hsl(0, 0%, 86%);
+        width: 100%;
+    }
+    .result-view{
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;700&display=swap');
+
+/*font-family: 'Figtree', sans-serif;
+*/
+
+
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+}
+
+ .card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    box-shadow: 8px 8px 0px black;
+    width: 17rem;
+    height: 25rem;
+    border: 1px solid;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: 17rem;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.card-content{
+    text-align: start;
+}
+
+.card-content .learning-box {
+    background-color: hsl(47, 88%, 63%);
+    width: 5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+.card-content .p1 {
+    font-size: 14px;
+}
+
+.card-content a {
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-content .p2 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+}
+
+.card-content img {
+    display: inline;
+    height: 2rem;
+}
+
+.card-content .avatar-name {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: 0.6rem;
+}
