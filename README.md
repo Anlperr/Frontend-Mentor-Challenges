@@ -1,4 +1,4 @@
-# Frontend-Mentor-Challenges
+# Frontend Mentor Challenges
 This repository contains the Frontend Mentor Challenges
 
 ## Welcome! 👋
