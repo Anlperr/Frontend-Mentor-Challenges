@@ -1,5 +1,5 @@
-# Java
-This repository contains the Java language
+# Frontend-Mentor-Challenges
+This repository contains the Frontend Mentor Challenges
 
 ## Welcome! 👋
 
